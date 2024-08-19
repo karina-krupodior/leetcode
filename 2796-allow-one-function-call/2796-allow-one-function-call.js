@@ -10,8 +10,7 @@ function once(fn) {
   return function(...args) {
     if (!hasBeenCalled) {
       hasBeenCalled = true;
-      result = fn(...args);
-      return result;
+      return fn(...args);
     }
     return undefined;
   };
